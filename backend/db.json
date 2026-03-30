@@ -4,13 +4,15 @@
             "id": 1,
             "firstname": "João",
             "lastname": "Silva",
-            "email": "joao@email.com"
+            "email": "joao@email.com",
+            "phone": "1999999999"
         },
         {
             "id": 2,
             "firstname": "Maria Beatriz",
             "lastname": "Alves",
-            "email": "maria@email.com"
+            "email": "maria@email.com",
+            "phone": "1900000000"
         }
     ]
 }

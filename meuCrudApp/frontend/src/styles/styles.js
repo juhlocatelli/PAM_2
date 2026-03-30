@@ -23,10 +23,14 @@ export default StyleSheet.create({
     },
 
     name: {
-        fontSize: 14
+        fontSize: 10
     },
 
     email: {
+        fontSize: 10
+    },
+
+    phone: {
         fontSize: 10
     },
 

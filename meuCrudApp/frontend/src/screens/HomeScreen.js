@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { View, Text, FlatList, Button } from "react-native";
 import styles from "../styles/styles";
 import { getPeople, deletePerson } from "../servers/peopleCrud";
+import AddEditScreen from "./AddEditScreen";
 
 export default function HomeScreen({ navigation }) {
     // estado da lista
@@ -46,11 +47,15 @@ function CardPersonal({item, navigation, refresh}){
             
             <View>
                 <Text style={styles.name}>
-                    {item.firstName} {item.lastName}
+                    {item.firstname} {item.lastname}
                 </Text>
 
                 <Text style={styles.email}>
                     {item.email}
+                </Text>
+
+                <Text style={styles.phone}>
+                    {item.phone}
                 </Text>
 
             </View>

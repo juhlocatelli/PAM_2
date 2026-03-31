@@ -1,18 +1,18 @@
 {
-    "people": [
-        {
-            "id": 1,
-            "firstname": "João",
-            "lastname": "Silva",
-            "email": "joao@email.com",
-            "phone": "1999999999"
-        },
-        {
-            "id": 2,
-            "firstname": "Maria Beatriz",
-            "lastname": "Alves",
-            "email": "maria@email.com",
-            "phone": "1900000000"
-        }
-    ]
+  "people": [
+    {
+      "firstName": "João",
+      "lastName": "Silva",
+      "email": "joao@email.co",
+      "phone": "1999999999",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "firstName": "Maria Beatriz",
+      "lastName": "Alves",
+      "email": "maria@email.com",
+      "phone": "1900000000"
+    }
+  ]
 }

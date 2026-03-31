@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { View, Text, FlatList, Button } from "react-native";
 import styles from "../styles/styles";
 import { getPeople, deletePerson } from "../servers/peopleCrud";
-import AddEditScreen from "./AddEditScreen";
 
 export default function HomeScreen({ navigation }) {
     // estado da lista
@@ -11,6 +10,7 @@ export default function HomeScreen({ navigation }) {
     // função para carregar dados
     async function loadPeople(){
         const data = await getPeople();
+        console.log("DADOS:", data);
         setPeople(data);
     }
 
@@ -27,8 +27,8 @@ export default function HomeScreen({ navigation }) {
                 onPress={()=> navigation.navigate("AddEdit")}
             />
             <FlatList
-                data={people}
-                keyExtractor={(item)=>item.id.toString()}
+                data={people.filter(item => item.firstName)}
+                keyExtractor={(item)=> String(item.id)}
                 renderItem={({item})=>(
                     <CardPersonal
                         item={item}
@@ -47,7 +47,7 @@ function CardPersonal({item, navigation, refresh}){
             
             <View>
                 <Text style={styles.name}>
-                    {item.firstname} {item.lastname}
+                    {item.firstName} {item.lastName}
                 </Text>
 
                 <Text style={styles.email}>

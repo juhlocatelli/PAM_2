@@ -1,4 +1,3 @@
-X
 import React, { useState } from "react";
 import { View, TextInput, Button } from "react-native";
 import styles from "../styles/styles";
@@ -37,12 +36,12 @@ export default function AddEditScreen({ route, navigation }) {
                     value={lastName}
                     onChangeText={setLastName}
                 />
-                <Text Input
+                <TextInput
                     placeholder="Email"
                     value={email}
                     onChangeText={setEmail}
                 />
-                <Text Input
+                <TextInput
                     placeholder="Phone"
                     value={phone}
                     onChangeText={setPhone}

@@ -149,4 +149,5 @@ Todos foram resolvidos ajustando:
 ## ✅ Conclusão
 
 O projeto atende todos os requisitos propostos, implementando corretamente um CRUD completo com integração entre frontend mobile e API simulada.
+Link para acesso do vídeo no youtube: https://youtube.com/shorts/tNZGIXygd_M?feature=share
 
